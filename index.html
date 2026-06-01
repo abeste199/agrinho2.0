@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Sustentável</title>
+    <title>Agronegócio e Sustentabilidade</title>
 
     <style>
         *{
@@ -16,106 +16,98 @@
         body{
             background:#f5f5f5;
             color:#222;
+            line-height:1.6;
         }
 
         header{
-            background:#1b5e20;
-            color:white;
-            padding:20px 40px;
+            background: linear-gradient(rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)),
+            url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854");
+            background-size: cover;
+            background-position: center;
+            height: 90vh;
+            color: white;
             display:flex;
-            justify-content:space-between;
+            flex-direction:column;
+            justify-content:center;
             align-items:center;
+            text-align:center;
+            padding:20px;
+        }
+
+        header h1{
+            font-size:3rem;
+            margin-bottom:15px;
+        }
+
+        nav{
+            background:#2e7d32;
+            padding:15px;
+            text-align:center;
+            position: sticky;
+            top:0;
         }
 
         nav a{
             color:white;
             text-decoration:none;
-            margin-left:20px;
+            margin:15px;
             font-weight:bold;
-        }
-
-        nav a:hover{
-            color:#c8e6c9;
-        }
-
-        .hero{
-            height:90vh;
-            background:
-                linear-gradient(rgba(0,0,0,0.45),
-                rgba(0,0,0,0.45)),
-                url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1600");
-            background-size:cover;
-            background-position:center;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            text-align:center;
-            color:white;
-            padding:20px;
-        }
-
-        .hero h1{
-            font-size:3rem;
-            margin-bottom:20px;
-        }
-
-        .hero p{
-            font-size:1.2rem;
-            max-width:700px;
-            margin:auto;
-        }
-
-        .btn{
-            display:inline-block;
-            margin-top:25px;
-            background:#43a047;
-            color:white;
-            padding:12px 28px;
-            border-radius:8px;
-            text-decoration:none;
-            font-weight:bold;
-        }
-
-        .btn:hover{
-            background:#2e7d32;
         }
 
         section{
-            padding:70px 40px;
-        }
-
-        .sobre{
+            padding:50px 10%;
             background:white;
-            text-align:center;
+            margin:20px;
+            border-radius:10px;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1);
         }
 
-        .sobre h2{
+        h2{
+            color:#2e7d32;
             margin-bottom:20px;
-            color:#1b5e20;
+        }
+
+        ul{
+            margin-left:20px;
         }
 
         .cards{
             display:grid;
             grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-            gap:25px;
-            margin-top:40px;
+            gap:20px;
+            margin-top:20px;
         }
 
         .card{
-            background:white;
-            padding:25px;
-            border-radius:12px;
-            box-shadow:0 4px 12px rgba(0,0,0,0.1);
-            transition:.3s;
+            background:#e8f5e9;
+            padding:20px;
+            border-radius:10px;
         }
 
-        .card:hover{
-            transform:translateY(-5px);
+        form{
+            display:flex;
+            flex-direction:column;
+            gap:15px;
         }
 
-        .card h3{
-            color:#2e7d32;
-            margin-bottom:12px;
+        input, textarea{
+            padding:12px;
+            border-radius:8px;
+            border:1px solid #ccc;
+        }
+
+        button{
+            background:#2e7d32;
+            color:white;
+            border:none;
+            padding:12px;
+            border-radius:8px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#1b5e20;
         }
 
         footer{
@@ -123,88 +115,178 @@
             color:white;
             text-align:center;
             padding:20px;
+            margin-top:30px;
         }
     </style>
 </head>
+
 <body>
 
     <header>
-        <h2>🌱 Agro Sustentável</h2>
-
-        <nav>
-            <a href="#">Início</a>
-            <a href="#">Sustentabilidade</a>
-            <a href="#">Tecnologia</a>
-            <a href="#">Contato</a>
-        </nav>
+        <h1>Agronegócio e Sustentabilidade</h1>
+        <p>
+            Como o agronegócio pode crescer economicamente sem comprometer
+            os recursos naturais das futuras gerações?
+        </p>
     </header>
 
-    <main>
+    <nav>
+        <a href="#introducao">Introdução</a>
+        <a href="#producao">Produção Agrícola</a>
+        <a href="#sustentabilidade">Sustentabilidade</a>
+        <a href="#desafios">Desafios</a>
+        <a href="#futuro">Soluções</a>
+        <a href="#contato">Contato</a>
+    </nav>
 
-        <section class="hero">
-            <div>
-                <h1>Agronegócio e Sustentabilidade</h1>
+    <section id="introducao">
+        <h2>Introdução</h2>
 
+        <p>
+            O agronegócio é um dos principais responsáveis pelo crescimento
+            econômico do Brasil. Grande parte das exportações nacionais
+            é proveniente do campo, gerando empregos diretos e indiretos
+            nos setores de transporte, comércio e serviços.
+        </p>
+
+        <p>
+            Apesar da sua enorme importância econômica, o setor também
+            provoca impactos ambientais, como desmatamento,
+            emissão de carbono e uso intenso da água.
+            Por isso, cresce a necessidade de investir em tecnologias
+            sustentáveis capazes de aumentar a produtividade e ao mesmo
+            tempo preservar o meio ambiente.
+        </p>
+    </section>
+
+    <section id="producao">
+        <h2>Produção Agrícola e Economia</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Economia brasileira</h3>
                 <p>
-                    Produzir alimentos com responsabilidade ambiental,
-                    inovação tecnológica e respeito aos recursos naturais
-                    é o caminho para um futuro mais sustentável.
+                    O agronegócio representa uma grande parte do PIB
+                    brasileiro e fortalece a economia nacional.
                 </p>
-
-                <a href="#" class="btn">Saiba Mais</a>
             </div>
-        </section>
 
-        <section class="sobre">
-            <h2>O Agro do Futuro</h2>
-
-            <p>
-                O agronegócio sustentável busca equilibrar produtividade,
-                preservação ambiental e desenvolvimento econômico.
-                O uso consciente da água, do solo e da tecnologia ajuda
-                a garantir produção eficiente sem comprometer as próximas gerações.
-            </p>
-
-            <div class="cards">
-
-                <div class="card">
-                    <h3>🌿 Preservação Ambiental</h3>
-                    <p>
-                        Conservação do solo, reflorestamento e proteção
-                        da biodiversidade.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>🚜 Tecnologia no Campo</h3>
-                    <p>
-                        Agricultura de precisão, drones e automação
-                        melhorando produtividade.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>💧 Uso Consciente da Água</h3>
-                    <p>
-                        Sistemas inteligentes de irrigação e reaproveitamento.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>🌎 Desenvolvimento Sustentável</h3>
-                    <p>
-                        Produção agrícola aliada ao crescimento econômico
-                        e responsabilidade social.
-                    </p>
-                </div>
-
+            <div class="card">
+                <h3>Exportações</h3>
+                <p>
+                    O Brasil é destaque mundial na exportação de soja,
+                    café, milho, algodão e carne bovina.
+                </p>
             </div>
-        </section>
 
-    </main>
+            <div class="card">
+                <h3>Tecnologia no campo</h3>
+                <p>
+                    Máquinas agrícolas, sensores, drones e sistemas
+                    inteligentes ajudam na produção e na colheita.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="sustentabilidade">
+        <h2>Sustentabilidade no Campo</h2>
+
+        <ul>
+            <li>Agricultura de precisão</li>
+            <li>Irrigação inteligente</li>
+            <li>Drones agrícolas</li>
+            <li>Painéis solares e energia renovável</li>
+            <li>Conservação do solo</li>
+            <li>Redução de desperdícios</li>
+        </ul>
+
+        <p>
+            Essas práticas permitem maior controle do plantio,
+            uso mais eficiente da água e redução de impactos
+            ambientais, tornando o campo mais sustentável.
+        </p>
+    </section>
+
+    <section id="desafios">
+        <h2>Desafios Ambientais</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Desmatamento</h3>
+                <p>
+                    A expansão agrícola pode causar perda de áreas
+                    naturais e da biodiversidade.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Uso da água</h3>
+                <p>
+                    A irrigação excessiva pode provocar desperdício
+                    e prejudicar recursos hídricos.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Carbono</h3>
+                <p>
+                    Máquinas e produção intensiva aumentam a emissão
+                    de gases do efeito estufa.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="futuro">
+        <h2>Soluções e Futuro</h2>
+
+        <p>
+            O futuro do agronegócio depende do equilíbrio entre
+            crescimento econômico e preservação ambiental.
+        </p>
+
+        <ul>
+            <li>Investimento em inovação tecnológica</li>
+            <li>Agricultura regenerativa</li>
+            <li>Uso consciente dos recursos naturais</li>
+            <li>Energia limpa nas propriedades rurais</li>
+            <li>Educação ambiental</li>
+        </ul>
+
+        <p>
+            A tecnologia será essencial para produzir mais,
+            preservar melhor e garantir recursos naturais
+            para as próximas gerações.
+        </p>
+    </section>
+
+    <section id="contato">
+        <h2>Conscientização</h2>
+
+        <p>
+            O desenvolvimento sustentável no agronegócio depende
+            da participação de produtores, empresas e da sociedade.
+        </p>
+
+        <form>
+            <input type="text" placeholder="Seu nome">
+            <input type="email" placeholder="Seu e-mail">
+            <textarea rows="5"
+            placeholder="Deixe sua opinião sobre sustentabilidade no campo"></textarea>
+
+            <button>Enviar</button>
+        </form>
+    </section>
 
     <footer>
-        © 2026 Agro Sustentável | Cultivando o presente, preservando o futuro.
+        <p>
+            Projeto escolar – Agronegócio e Sustentabilidade | 2026
+        </p>
     </footer>
 
 </body>
